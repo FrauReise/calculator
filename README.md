@@ -1,7 +1,6 @@
 # Simple Calculator
 #### A simple calculator for 4 operations.This page has a dialog box for users and spoilers with possible educational materials and interesting information.
 
-![calculator page](assets/img/simpleCalc.png)
 
 # Technology stack
 
