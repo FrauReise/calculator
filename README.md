@@ -1,2 +1,8 @@
 # Simple Calculator
-## A simple calculator for 4 operations.The page also has a dialog box for getting to know users and spoilers with possible educational materials and interesting information.
+#### A simple calculator for 4 operations.This page has a dialog box for users and spoilers with possible educational materials and interesting information.
+
+![calculator page](assets/img/simpleCalc.png)
+
+# Technology stack
+
+![html logo](assets/img/htmlLogo.png) ![css logo](assets/img/cssLogo.png) ![js logo](assets/img/jsLogo.png)
