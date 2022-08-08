@@ -12,8 +12,8 @@ let signs = [
     'c'
 ];
 
-let calc = document.getElementById('calc');
-let textArea = document.getElementById('inputVal');
+const calc = document.getElementById('calc');
+const textArea = document.getElementById('inputVal');
 
 
 signs.forEach(function (sign) {
