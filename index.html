@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="assets/style/normalize.css">
+	<link rel="stylesheet" href="assets/style/style.css">
+	
+</head>
+
+<body>
+	<header class="header">
+		<h1 class="header-title">Добро пожаловать!</h1>
+		<div class="welcome">
+			<button class="welcome-btn" id="bgnBtn" onclick="promptMe()">Познакомимся?</button>
+		</div>
+
+	</header>
+
+	<main class="main">
+		<section class="main__section main__section-calculator">
+			<h2 class="subtitle">Калькулятор</h2>
+			<div id="calc-wrap">
+				<div id="calc" class="calculator">
+					<textarea id=inputVal class="inputVal">0</textarea>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="main__section main__section-study">
+			<h2 class="subtitle">Учебные материалы</h2>
+			
+			<input type="checkbox" id="spoiler2"> 
+			<label for="spoiler2" >История калькулятора</label>
+		   <div class="spoiler">
+			Современный калькулятор прошел богатую историю. Изобретателя самого первого примитивного калькулятора звали Вильгельм Шиккард.
+			Он в 1623 году разработал вычислительный механизм, который был способен слагать, вычитать, умножать и делить.
+			Устройство своей внешностью и принципом действия сильно напоминало часы.Отсюда и его название – «считающие часы», которые любил использовать Иоганн Кеплер.
+			Усовершенствования «математических орудий» предпринимались Паскалем, Лейбницем, Томасом.
+			Последний в 1820 году представил научному обществу довольно таки неплохой прототип ручного калькулятора.
+			Первый же электронный калькулятор был изобретен в 1961 английскими учеными.Однако его габариты не придавали ему портативности.Проблема размеров была решена спустя 10 лет в Америке,
+			где начал свой триумфальный путь микрокалькулятор, который интенсивно усовершенствуется до сегодня.Сейчас калькуляторы встроены во всевозможные гаджеты.
+			<br><br>
+			<img src="assets/img/calcInfo.png" alt="calculator">
+		   </div>
+
+			<input type="checkbox" id="spoiler"> 
+			<label for="spoiler">Полезные ресурсы</label>
+		   <div class="spoiler">
+			-Математический портал, на котором вы найдете любой материал по математическим дисциплинам:
+			<a href="http://allmath.ru/">Allmath.ru</a>
+			<br><br>
+			-Материалы для самостоятельного изучения математики со множеством примеров и задач для самостоятельного решения,
+			интересные статьи о математике,обучении и образовании:
+
+			<a href="http://window.edu.ru/resource/986/72986">Математика,которая мне нравится</a>
+			<br><br>
+			-Первый номер журнала "Квант" вышел в 1970 году.Материалы, накопленные в журнале за четыре десятилетия,бесценны:
+
+			<a href="http://kvant.mccme.ru/">Архив номеров "Кванта"></a>
+			<br><br>
+			<img src="assets/img/learn.jpg" alt="count">
+		   </div>
+
+		</section>
+	</main>
+
+	<footer class="footer">
+		<h2 class="subtitle">Напиши нам <a href="sample.html">
+			<img class="footer__img" src="assets/img/envelope.png" alt="envelope"></a></h2>
+	</footer>
+
+
+
+
+	<script src="assets/script/script.js"></script>
+</body>
+
+</html>

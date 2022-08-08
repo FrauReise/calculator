@@ -1,0 +1,116 @@
+.welcome {
+    display: flex;
+    background-image: url('/assets/img/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.welcome-btn {
+    justify-self: center;
+    margin-left: 45%;
+    width: 10rem;
+    height: 5rem;
+    font-family: 'Prompt-Medium', Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    text-align: center;
+    background-color: #fc0;
+    border: none;
+}
+
+@font-face {
+    font-family: 'Prompt-Medium';
+    src: url(/assets/fonts/Prompt-Medium.ttf);
+}
+
+.header-title,
+.subtitle,
+.spoiler {
+    font-family: 'Prompt-Medium', Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+.footer,
+.header {
+    background-color: rgb(235, 235, 235);
+}
+
+/* Калькулятор */
+
+.btn {
+    width: 60px;
+    height: 60px;
+    background: #fc0;
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+    user-select: none;
+}
+
+.btn:hover {
+    background: rgb(191, 191, 191);
+    color: #fff;
+}
+
+#calc-wrap {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 300;
+    background: #eee;
+}
+
+.calculator {
+    width: 240px;
+    display: inline-block;
+}
+
+.inputVal {
+    width: 99%;
+    border: 0;
+    font-size: 25px;
+    resize: vertical;
+}
+
+/* Спойлеры */
+
+input[id^="spoiler"]{
+    display: none;
+   }
+   input[id^="spoiler"] + label {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    background:  #fc0;
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .6s;
+   }
+   input[id^="spoiler"]:checked + label {
+    color: #333;
+    background: #ccc;
+   }
+   input[id^="spoiler"] ~ .spoiler {
+    width: 90%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin: 10px auto 0; 
+    padding: 10px; 
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all .6s;
+   }
+   input[id^="spoiler"]:checked + label + .spoiler{
+    height: auto;
+    opacity: 1;
+    padding: 10px; }
+
+   
