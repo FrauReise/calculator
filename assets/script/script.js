@@ -1,10 +1,10 @@
 function promptMe(){
-    let userName = prompt("Привет,дорогой Пользователь!Представься,пожалуйста!");
+    const userName = prompt("Привет,дорогой Пользователь!Представься,пожалуйста!");
 }
 
 
 
-var signs = [
+let signs = [
     '7', '8', '9', '+',
     '4', '5', '6', '-',
     '1', '2', '3', '/',
@@ -12,12 +12,12 @@ var signs = [
     'c'
 ];
 
-var calc = document.getElementById('calc');
-var textArea = document.getElementById('inputVal');
+let calc = document.getElementById('calc');
+let textArea = document.getElementById('inputVal');
 
 
 signs.forEach(function (sign) {
-    var signElement = document.createElement('div');
+    let signElement = document.createElement('div');
     signElement.className = 'btn';
     signElement.innerHTML = sign;
     calc.appendChild(signElement);
