@@ -1,7 +1,8 @@
-function promptMe(){
-    const userName = prompt("Привет,дорогой Пользователь!Представься,пожалуйста!");
+function userName(){
+    const firstName = prompt('Привет,дорогой Пользователь!Представься,пожалуйста!');
+    alert("Привет," + firstName);
+    return firstName;
 }
-
 
 
 let signs = [
