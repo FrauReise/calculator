@@ -9,7 +9,7 @@ let signs = [
     '7', '8', '9','+',
     '4', '5', '6','-',
     '1', '2', '3','*',
-    '0','.', '=','/0','/',
+    '0','.', '=','/',
     'c'
 ];
 
@@ -47,16 +47,6 @@ function onButtonClick(e) {
         textArea.innerHTML += e.target.innerHTML;
     }
 
-    
-if (e.target.innerHTML === '/0') {
-    textArea.innerHTML = 'На ноль делить нельзя';
-    return;
-}
-
 }
 
 
-// if ((signElement == '0') && (operationElement == '/')) {
-//     textArea.innerHTML = 'На ноль делить нельзя';
-//     return;
-// }
