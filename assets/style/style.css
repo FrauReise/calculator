@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Prompt-Medium';
+    src: url("assets/fonts/Prompt-Medium.ttf") format("ttf");
+}
+
 .button-wrapper {
     display: flex;
     justify-content: center;
@@ -16,11 +21,6 @@
     text-align: center;
     background-color: #fc0;
     border: none;
-}
-
-@font-face {
-    font-family: 'Prompt-Medium';
-    src: url(/assets/fonts/Prompt-Medium.ttf);
 }
 
 .header-title,
