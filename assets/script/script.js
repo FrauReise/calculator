@@ -10,6 +10,7 @@ let signs = [
     '4', '5', '6','-',
     '1', '2', '3','*',
     '0','.', '=','/',
+    '/0',
     'c'
 ];
 
@@ -45,6 +46,10 @@ function onButtonClick(e) {
     } else {
         
         textArea.innerHTML += e.target.innerHTML;
+    }
+
+    if (e.target.innerHTML === '/0') {
+        textArea.innerHTML = 'На ноль делить нельзя!';
     }
 
 }
