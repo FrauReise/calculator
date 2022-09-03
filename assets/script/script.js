@@ -10,7 +10,6 @@ let signs = [
     '4', '5', '6','-',
     '1', '2', '3','*',
     '0','.', '=','/',
-    '/0',
     'c'
 ];
 
@@ -34,7 +33,7 @@ document.querySelectorAll('#calc-wrap .btn').forEach(function (button) {
 
 
 function onButtonClick(e) {
- 
+
     if (e.target.innerHTML === 'c') {
         textArea.innerHTML = '0';
     } else if (e.target.innerHTML === '=') {
@@ -47,11 +46,17 @@ function onButtonClick(e) {
         
         textArea.innerHTML += e.target.innerHTML;
     }
-
+ 
     if (e.target.innerHTML === '/0') {
-        textArea.innerHTML = 'На ноль делить нельзя!';
+           textArea.innerHTML = 'На ноль делить нельзя!';
+         } 
+    
+        let result = textArea.value.match(/\/0/); // Регулярное выражение для поиска определенных символов в строках. match возвращает null, если совпадений нет, и массив, если совпадения есть. 
+        if (result) {
+            textArea.innerHTML = 'На ноль делить нельзя!';
+        }
     }
 
-}
+
 
 
